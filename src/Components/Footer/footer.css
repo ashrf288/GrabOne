@@ -1,0 +1,44 @@
+.footer{
+    
+    margin-left: 1%;
+    width:90%
+
+    
+}
+
+
+.newsteller-bar input{
+    border:0;
+    outline:none;
+}
+.newsteller-bar input:active{
+    border: none;
+    outline:none;
+}
+.newsteller-bar{
+    padding-block:8px;
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+
+
+.newsteller-bar:active ,.search-bar:hover {
+    border: 2px black solid ; 
+
+}
+
+.socialIcons{
+    display: flex;
+    gap:10px;
+}
+
+.socialIcons:hover{
+    cursor: pointer;
+}
+
+.GrabOne p:hover{
+    color: aqua;
+
+}

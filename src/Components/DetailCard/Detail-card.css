@@ -1,0 +1,77 @@
+
+
+.new-price{
+    color:rgb(1,178,238) !important;
+    font-size: xx-large !important;
+    font-weight: 600;
+    margin-left: 70% ;
+}
+.new-price2{
+  color:rgb(1,178,238) !important;
+  font-size: xx-large !important;
+  font-weight: 600;
+  margin-left:55% ;
+}
+
+.new-price3{
+  color:rgb(1,178,238) !important;
+  font-size: xx-large !important;
+  font-weight: 600;
+  margin-left:65% ;
+}
+.container {
+    position: relative !important;
+    margin-left: -1.5rem !important;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #088ed1ad;
+    margin-left: 1.5rem !important;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 15px;
+    width:100%;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    
+  }
+
+  .loveIcon{
+   background-color: #9BC1E7;
+   border-radius: 50%;
+   padding:5px;
+   position: absolute;
+   right:4px; 
+   top:10px;
+   z-index: 100;
+   cursor: grabbing;
+}
+
+
+.like_modal{
+  width:80% !important;
+  border-radius: 50% !important;
+}

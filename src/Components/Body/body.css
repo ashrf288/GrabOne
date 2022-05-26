@@ -1,0 +1,17 @@
+.site-body{
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+}
+
+.card-item{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2%;
+}
+.card-item strong:hover{
+    color:rgb(1,178,238);
+    cursor: pointer;
+}
+
+

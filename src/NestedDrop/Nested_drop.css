@@ -1,0 +1,62 @@
+
+
+/* .detail-card{
+    
+   
+  
+    width:40% !important;
+    min-height: 80% !important;
+    overflow: hidden;
+} */
+
+.drop-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    width:18rem;
+    padding: 0% !important;
+
+}
+
+.drop-item:hover{
+    color:#01B2EE;
+    
+
+}
+.drop-item:active{
+    color:#01B2EE !important;
+    
+
+}
+
+
+
+.drop-item:hover .drop-icon{ 
+    transition: transform 0.1s ease;
+    transform: translateX(5px);
+}
+
+.cardTitle{
+    color:#01B2EE;
+    font-size: large;
+    padding-top: 1rem;
+}
+
+.cardDataEven{
+    margin-bottom: 4px !important;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+.cardDataOdd{
+    font-size: small;
+    color: rgb(169, 169, 169);
+    font-size: 12px;
+    font-weight: 100;
+
+}
+
+.categories-card{
+    padding-block: 0 !important;
+}
