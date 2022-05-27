@@ -72,6 +72,6 @@
 
 
 .like_modal{
-  width:80% !important;
-  border-radius: 50% !important;
+  border-radius: 5% !important;
+  padding-block: 50%;
 }

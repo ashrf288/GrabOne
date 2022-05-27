@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FormControl, InputGroup, Button,Row,Col } from "react-bootstrap";
 import { Icon } from "@iconify/react";
-import NestedDrop from "../../NestedDrop/NestedDrop";
+import NestedDrop from "../NestedDrop/NestedDrop";
 
 export default function CategoriesHeader() {
   return (

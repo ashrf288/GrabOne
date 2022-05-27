@@ -56,7 +56,7 @@ export default function DetailCard({ ele }) {
           {ele.new}
         </Card.Text>
       </Card.Body>
-      <LikeModal isShow={isShow} setshow={setIsShow} />
+      <LikeModal isShow={isShow} setshow={setIsShow}  />
     </Card>
   );
 }

@@ -8,7 +8,7 @@ export default function LikeModal({isShow,setshow}) {
   
     return (
       <div>
-        <Modal style={{paddingTop:"15%",width:"45rem"}}
+        <Modal 
           show={isShow}
           onHide={handleClose}
           backdrop="static"
@@ -18,10 +18,10 @@ export default function LikeModal({isShow,setshow}) {
         >
           <Modal.Header closeButton style={{color:'blue'}}>
         </Modal.Header>
-          <Modal.Body style={{width:"40rem"}}>
+          <Modal.Body >
           <p style={{fontSize:"2rem" ,color:"#01b2ee"}}>Please register or log in.</p>
           <p>Create your own Wishlist and share it with your friends and family!</p>
-            <Button variant="primary" onClick={handleClose} style={{width:"70%",marginLeft:"4%"  }}>
+            <Button variant="primary" onClick={handleClose} style={{width:"70%",marginLeft:"15%"  }}>
               continue
             </Button>
           </Modal.Body>
