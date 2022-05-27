@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Card, Row, Col, Container } from "react-bootstrap";
+import { Card, Button, Row, Col, Container } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import LikeModal from "../DetailCard/LikeModal";
-export default function ActivityDeals() {
+export default function StoreDeals() {
   const [isShow, setIsShow] = useState(false);
   return (
     <Container fluid className="card-container">
@@ -92,42 +92,43 @@ export default function ActivityDeals() {
 
 let data = [
   {
-    id: "00012",
-    name: "Pen Fishing Rod Reel J1460-6",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/9b9e52a07c0d6e6701b240ec047c7c70490d0594.jpg",
-    location: "Pen Fishing Rod Reel",
+    id: "003301",
+    name: "Memory Foam Fur Trim UGG Scuffs",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/a5d88cd04bad265c44b1438a3f14ede3bc809e5b.jpg",
+    location: "GHN Trading",
     old: null,
-    new: "$54",
-    desc: "Pen Fishing Rod Reel J1460-6",
-    bought:20
+    new: "$82",
+    bought:45,
+    desc: "Comfort Me 'Wombat' Memory Foam Fur Trim UGG Scuffs - Five Colours & Eight Sizes Available",
   },
   {
-    id: "00022",
-    name: "Outdoor Pop-Up Tent ",
-    location: "Outdoor Pop-Up Tent ",
-    old: null,
-    new: "$169",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/8772142ba94cb36bbbbc03b32c2b62ed4dda5e8e.jpg",
-    desc: "Outdoor Pop-Up Tent - Two Colours Available",
-    bought:20
+    id: "2321312",
+    name: "IPL Premium Hair Removal Handset",
+    location: null,
+    old: "$249.99 ",
+    new: "$148",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/484ddb7b23982a83815c7dba2acf4509f2c727a8.jpg",
+    bought:45,
+    desc: "One-Night, Four-Star Rotorua Stay for Two Adults and up to Two Children in a Deluxe King/Twin Room incl. Cooked Breakfast, Late Checkout, WiFi & Parking - Options for Two or Three Nights Available & for Stays in a Junior Suite",
   },
   {
-    id: "00033",
-    name: "Keychain Flashlight Tool ",
-    location: "Westie Bistro",
+    id: "555",
+    name: "1800W 8.5L Air Fryer",
+    location: null,
     old: null,
-    new: "$29",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/c8b2580cd5d583a41b501e9574dbf054f53f8aa8.jpg",
-    desc: "Keychain Flashlight Tool ",
-    bought:20
+    new: "$129",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/dc912ca9aa5dede2bc47b2e5fd02b146f71b5ecd.jpg",
+    bought:45,
+    desc: "1800W 8.5L Air Fryer - Two Options Available",
   },
   {
-    id: "00044",
-    name: "Cargo Luggage Net",
-    location: "Fable Terrace Down M Gallery",
-    old: "$25",
-    new: "$19.5",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/f67042bf7a1106e71559f910931124b0dc1ab810.jpg",
-    desc: "Cargo Luggage Net",
+    id: "56464",
+    name: "Maxkon 2500W Carbon Fibre Infrared Heater",
+    location: null,
+    old: null,
+    new: "$299",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/3b214dd542fc4d52ec7ecd0140fd300d0fff405d.jpg",
+    bought:45,
+    desc: "Maxkon 2500W Carbon Fibre Infrared Heater",
   },
 ];

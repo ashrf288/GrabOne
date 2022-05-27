@@ -16,7 +16,7 @@ export default function Footer(props) {
  }}>
    
      {props.width < 1280 && (
-          <div style={{marginTop: "100vh", marginLeft:"2%"}}>
+          <div style={{marginTop: "1vh", marginLeft:"2%"}}>
             <p style={{ fontWeight: "bold" }}>Newsletter Signup</p>
             <p>
               Sign up for our daily emails and we'll send you all the best

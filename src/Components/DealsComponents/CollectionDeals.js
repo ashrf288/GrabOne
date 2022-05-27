@@ -30,7 +30,7 @@ export default function CollectionDeals() {
                    
                   </div>
                 <Card.Body >
-                  <Card.Title>{ele.name}</Card.Title>
+                  <Card.Title className="card_title ">{ele.name}</Card.Title>
                   <Card.Text style={{ color: "#01B2EE" }}>
                     {ele.location}
                   </Card.Text>

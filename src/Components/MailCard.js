@@ -12,13 +12,14 @@ import { Icon } from "@iconify/react";
 
 export default function MailCard() {
   return (
-    <Container>
-      <Card style={{ minWidth: "100%", marginBlock: "4%",padding:"1.5rem", textAlign:"start" }}>
-        {/* {style={{ display: "flex", justifyContent: "space-between" }}} */}
-        <Card.Body >
-          <Row>
-            <Col   xs={6} md={12} lg={8} sm={12}>
-              <Card.Text
+    <Container fluid>
+      <Row style={{
+        backgroundColor: "white",
+        borderRadius: "10px",
+        marginBlock:"2%"
+      }}>
+        <Col xl={6} lg={7} md={12} sm={12} style={{marginBlock:"4%"}}>
+        <Card.Text
                 style={{
                   fontSize: "1.2rem",
                   color: "#01B2EE",
@@ -27,9 +28,9 @@ export default function MailCard() {
               >
                 Get the best deals delivered direct to your inbox each day
               </Card.Text>
-            </Col>
-            <Col   xs={6} md={12} lg={4} sm={12} style={{paddingBlock:"3%", minWidth:"30%"}}>
-              <div style={{ display: "flex" }}>
+        </Col>
+        <Col xl={6} lg={5} md={12} sm={12} style={{marginBlock:"4%"}}>
+        <div style={{ display: "flex" }}>
                 <InputGroup size="lg" style={{ height: "15px" }}>
                   <InputGroup.Text
                     style={{ backgroundColor: "white" }}
@@ -52,10 +53,26 @@ export default function MailCard() {
                   </Button>
                 </InputGroup>
               </div>
+        </Col>
+      </Row>
+
+    </Container>
+  );
+}
+
+
+<Container>
+      <Card style={{ minWidth: "100%", marginBlock: "4%",padding:"1.5rem", textAlign:"start" }}>
+        {/* {style={{ display: "flex", justifyContent: "space-between" }}} */}
+        <Card.Body >
+          <Row>
+            <Col   xs={6} md={12} lg={8} sm={12}>
+             
+            </Col>
+            <Col   xs={6} md={12} lg={4} sm={12} style={{paddingBlock:"3%", minWidth:"30%"}}>
+
             </Col>
           </Row>
         </Card.Body>
       </Card>
     </Container>
-  );
-}
