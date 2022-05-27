@@ -6,30 +6,18 @@ import LikeModal from "./LikeModal";
 export default function DetailCard({ ele }) {
   const [isShow, setIsShow] = useState(false);
   return (
-    <Card
-      style={{
-        maxHeight: "35rem",
-        marginBottom: "2%",
-        marginTop: "2%",
-        textAlign: "left",
-      }}
+    <Card className="card-container"
     >
-      <div className="container">
-        <Card.Img src={ele.img}
-         style={{ 
-          minWidth: "110%",
-          marginLeft: "-1.45rem",
-            }} />
-        <Icon
-          icon="tabler:heart-plus"
-          className="loveIcon"
-          width="30"
-          onClick={() => setIsShow(true)}
-        />
-        <div className="overlay" style={{minWidth:"100%"}}>
-          <Card.Text className="text">{ele.desc}</Card.Text>
-        </div>
-      </div>
+     <div className="card_backGround">
+                    <Card.Img className="cardimg" src={ele.img} />
+                    <p className="text">{ele.desc}</p>
+                    <Icon
+                      icon="tabler:heart-plus"
+                      className="loveIcon"
+                      width="30"
+                      onClick={() => setIsShow(true)}
+                    />
+                  </div>
       <Card.Body>
         <Card.Title>{ele.name}</Card.Title>
         <Card.Text style={{ color: "#01B2EE" }}>{ele.location}</Card.Text>
@@ -43,10 +31,10 @@ export default function DetailCard({ ele }) {
         >
           from
         </Card.Text>
-        <Card.Text className="new-price">
+        <Card.Text className="new-price2">
           <span
             style={{
-              fontSize: "14px",
+              fontSize: "50%",
               color: "gray",
               textDecoration: "line-through",
             }}

@@ -5,8 +5,8 @@ import LikeModal from "../DetailCard/LikeModal";
 export default function EscapesDeals() {
   const [isShow, setIsShow] = useState(false);
   return (
-    <Container fluid>
-      <Row className="row deals" style={{ maxWidth: "100%" }}>
+    <Container fluid className="card-container">
+      <Row style={{ maxWidth: "100%" }}>
         {data.map((ele) => {
           return (
             <Col
@@ -24,31 +24,19 @@ export default function EscapesDeals() {
                   marginTop: "2%",
                   textAlign: "left",
                 }}
-                className="col-sm-*"
               >
-                <div className="container">
-                  <Card.Img
-                    variant="top"
-                    className="w-6 "
-                    src={ele.img}
-                    style={{
-                      display: "block",
-                      minWidth: "118%",
-                      marginLeft: "-1.5rem",
-                    }}
-                  />
-                  <Icon
-                    icon="tabler:heart-plus"
-                    className="loveIcon"
-                    width="30"
-                    onClick={() => setIsShow(true)}
-                  />
-                  <div className="overlay">
-                    <Card.Text className="text">{ele.desc}</Card.Text>
+                <Card.Body style={{ padding: "0" }}>
+                  <div className="card_backGround">
+                    <Card.Img className="cardimg" src={ele.img} />
+                    <p className="text">{ele.desc}</p>
+                    <Icon
+                      icon="tabler:heart-plus"
+                      className="loveIcon"
+                      width="30"
+                      onClick={() => setIsShow(true)}
+                    />
                   </div>
-                </div>
-                <Card.Body>
-                  <Card.Title>{ele.name}</Card.Title>
+                  <Card.Title className="card_title">{ele.name}</Card.Title>
                   <Card.Text style={{ color: "#01B2EE" }}>
                     {ele.location}
                   </Card.Text>

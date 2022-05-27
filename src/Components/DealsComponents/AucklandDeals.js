@@ -7,7 +7,7 @@ export default function AucklandDeals() {
   const [isShow, setIsShow] = useState(false);
 
   return (
-    <Container fluid>
+    <Container fluid className="card-container">
       <Row style={{ maxWidth: "100%" }}>
         {data.map((ele) => {
           return (
@@ -27,29 +27,18 @@ export default function AucklandDeals() {
                   textAlign: "left",
                 }}
               >
-                <div className="container">
-                  <Card.Img
-                    variant="top"
-                    src={ele.img}
-                    style={{
-                      display: "block",
-                      minWidth: "119%",
-                      marginLeft: "-1.55rem",
-                    }}
-                  />
-                  <Icon
-                    icon="tabler:heart-plus"
-                    className="loveIcon"
-                    width="30"
-                    onClick={() => setIsShow(true)}
-                  />
-
-                  <div className="overlay">
-                    <Card.Text className="text">{ele.desc}</Card.Text>
+                <Card.Body style={{ padding: "0" }}>
+                  <div className="card_backGround">
+                    <Card.Img className="cardimg" src={ele.img} />
+                    <p className="text">{ele.desc}</p>
+                    <Icon
+                      icon="tabler:heart-plus"
+                      className="loveIcon"
+                      width="30"
+                      onClick={() => setIsShow(true)}
+                    />
                   </div>
-                </div>
-                <Card.Body>
-                  <Card.Title>{ele.name}</Card.Title>
+                  <Card.Title className="card_title">{ele.name}</Card.Title>
                   <Card.Text style={{ color: "#01B2EE" }}>
                     {ele.location}
                   </Card.Text>

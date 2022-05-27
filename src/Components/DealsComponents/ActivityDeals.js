@@ -5,80 +5,71 @@ import LikeModal from "../DetailCard/LikeModal";
 export default function ActivityDeals() {
   const [isShow, setIsShow] = useState(false);
   return (
-    <Container fluid>
-      <Row className="row deals" style={{ maxWidth: "100%" }}>
-        {data.map((ele) => {
-          return (
-            <Col
-              xl={3}
-              lg={4}
-              md={6}
-              sm={12}
-              className="col-md-offset-4"
-              key={ele.id}
+    <Container fluid className="card-container">
+    <Row style={{ maxWidth: "100%" }}>
+      {data.map((ele) => {
+        return (
+          <Col
+            xl={3}
+            lg={4}
+            md={6}
+            sm={12}
+            className="col-md-offset-4"
+            key={ele.id}
+          >
+            <Card
+              style={{
+                minWidth: "15rem",
+                marginBottom: "2%",
+                marginTop: "2%",
+                textAlign: "left",
+              }}
             >
-              <Card
-                style={{
-                  minWidth: "15rem",
-                  maxHeight: "25rem",
-                  marginBottom: "2%",
-                  marginTop: "2%",
-                  textyAlign: "left",
-                }}
-                className="col-sm-*"
-              >
-                <div className="container">
-                  <Card.Img
-                    variant="top"
-                    className="w-6 "
-                    src={ele.img}
-                    style={{ display: "block", width: "108%" }}
-                  />
+              <Card.Body style={{ padding: "0" }}>
+                <div className="card_backGround">
+                  <Card.Img className="cardimg" src={ele.img} />
+                  <p className="text2">{ele.desc}</p>
                   <Icon
                     icon="tabler:heart-plus"
                     className="loveIcon"
                     width="30"
                     onClick={() => setIsShow(true)}
                   />
-                  <div className="overlay">
-                    <Card.Text className="text">{ele.desc}</Card.Text>
-                  </div>
                 </div>
-                <Card.Body>
-                  <Card.Title>{ele.name}</Card.Title>
-                  <Card.Text style={{ color: "#01B2EE" }}>
-                    {ele.location}
-                  </Card.Text>
-                  <Card.Text
+                <Card.Title className="card_title">{ele.name}</Card.Title>
+                <Card.Text style={{ color: "#01B2EE" }}>
+                  {ele.location}
+                </Card.Text>
+                <Card.Text
+                  style={{
+                    marginLeft: "80%",
+                    marginBottom: 0,
+                    fontSize: "14px",
+                    color: "#01B2EE",
+                  }}
+                >
+                  from
+                </Card.Text>
+                <Card.Text className="new-price2">
+                  <span
                     style={{
-                      marginLeft: "80%",
-                      marginBottom: 0,
                       fontSize: "14px",
-                      color: "#01B2EE",
+                      color: "gray",
+                      textDecoration: "line-through",
                     }}
                   >
-                    from
-                  </Card.Text>
-                  <Card.Text className="new-price3">
-                    <span
-                      style={{
-                        fontSize: "14px",
-                        color: "gray",
-                        textDecoration: "line-through",
-                      }}
-                    >
-                      {ele.old}
-                    </span>
-                    {ele.new}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          );
-        })}
-        <LikeModal isShow={isShow} setshow={setIsShow} />
-      </Row>
-    </Container>
+                    {ele.old}
+                  </span>
+                  {ele.new}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        );
+      })}
+      <LikeModal isShow={isShow} setshow={setIsShow} />
+    </Row>
+  </Container>
   );
 }
 
