@@ -5,7 +5,7 @@ import NestedDrop from "../NestedDrop/NestedDrop";
 
 export default function CategoriesHeader() {
   return (
-    <Row className="categories-header">
+    <Row className="categories-header" style={{margin:"0"}}>
       <Col lg={7} md={11} className="head-lines">
         <NestedDrop />
         <span className="categorie">What's New</span>

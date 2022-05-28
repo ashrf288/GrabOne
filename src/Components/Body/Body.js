@@ -8,6 +8,7 @@ import AucklandDeals from "../DealsComponents/AucklandDeals";
 import CollectionDeals from "../DealsComponents/CollectionDeals";
 import EscapesDeals from "../DealsComponents/EscapesDeals";
 import StoreDeals from "../DealsComponents/StoreDeals";
+import ResturantDeals from "../DealsComponents/ResturantDeals";
 import Heading from "./Heading";
 import ActivityDeals from "../DealsComponents/ActivityDeals";
 
@@ -51,6 +52,8 @@ export default function Body({ width }) {
         <ActivityDeals />
         <Heading name="Store " />
         <StoreDeals/>
+        <Heading name="Restaurants, Bars, Cafes " />
+        <ResturantDeals/>
       </div>
     </div>
   );

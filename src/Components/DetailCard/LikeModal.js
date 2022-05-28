@@ -7,7 +7,7 @@ export default function LikeModal({isShow,setshow}) {
 
   
     return (
-      <div>
+      <div style={{}}>
         <Modal 
           show={isShow}
           onHide={handleClose}

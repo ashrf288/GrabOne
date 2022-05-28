@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import LikeModal from "../DetailCard/LikeModal";
-export default function StoreDeals() {
+export default function ResturantDeals() {
   const [isShow, setIsShow] = useState(false);
   return (
     <Container fluid className="card-container">
@@ -100,43 +100,43 @@ export default function StoreDeals() {
 
 let data = [
   {
-    id: "003301",
-    name: "Memory Foam Fur Trim UGG Scuffs",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/a5d88cd04bad265c44b1438a3f14ede3bc809e5b.jpg",
-    location: "GHN Trading",
-    old: null,
-    new: "$82",
+    id: "003w301",
+    name: "$40 Breakfast or Lunch Voucher for Two People",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/ed9c8819fecc112a9655aaf8c48561c94e4a7a58.jpg",
+    location: "Remuera Local & Laneway",
+    old: "$40",
+    new: "$20",
     bought:45,
-    desc: "Comfort Me 'Wombat' Memory Foam Fur Trim UGG Scuffs - Five Colours & Eight Sizes Available",
+    desc: "$40 Breakfast or Lunch Voucher for Two People - Option for $60 Dinner Voucher",
   },
   {
-    id: "2321312",
-    name: "IPL Premium Hair Removal Handset",
-    location: null,
-    old: "$249.99 ",
-    new: "$148",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/484ddb7b23982a83815c7dba2acf4509f2c727a8.jpg",
+    id: "233321312",
+    name: "Five-Course European Dining Experience for One Person",
+    location: "Monsieur Madame",
+    old: null,
+    new: "$69",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/5147d794573f908e161e61e5b2408c9d33522522.jpg",
     bought:45,
-    desc: "One-Night, Four-Star Rotorua Stay for Two Adults and up to Two Children in a Deluxe King/Twin Room incl. Cooked Breakfast, Late Checkout, WiFi & Parking - Options for Two or Three Nights Available & for Stays in a Junior Suite",
+    desc: "Five-Course European Dining Experience for One Person - Options for up to Eight People",
   },
-  {
-    id: "555",
-    name: "1800W 8.5L Air Fryer",
-    location: null,
-    old: null,
-    new: "$129",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/dc912ca9aa5dede2bc47b2e5fd02b146f71b5ecd.jpg",
-    bought:41,
-    desc: "1800W 8.5L Air Fryer - Two Options Available",
+ {
+    id: "53555",
+    name: "One-Night 5-Star Luxury Dunedin Getaway for Two incl. $50 F&B Credit",
+    location: "Fable Dunedin",
+    old: "$521",
+    new: "$289",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/03335a4e8cf15b4b10d7a36f03238152c1adbf0f.jpg",
+    bought:11,
+    desc: "One-Night 5-Star Luxury Dunedin Getaway for Two incl. $50 F&B Credit, Bubbles on Arrival, Cooked Breakfast, Valet Parking & Late Checkout - Option for Two & Three Nights with up to $100 Credit",
   },
-  {
-    id: "56464",
-    name: "Maxkon 2500W Carbon Fibre Infrared Heater",
-    location: null,
-    old: null,
-    new: "$299",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/3b214dd542fc4d52ec7ecd0140fd300d0fff405d.jpg",
+  { 
+    id: "5646422",
+    name: "Laser LipoSlim Fat Reduction Treatment on Two Areas incl",
+    location: "Life Clinic Health & Beauty",
+    old:"$355",
+    new: "$89",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/299fabae4e142e2c9fee7bb895636ed458be4762.jpg",
     bought:32,
-    desc: "Maxkon 2500W Carbon Fibre Infrared Heater",
+    desc: "Laser LipoSlim Fat Reduction Treatment on Two Areas incl. Consultation & a Return Voucher - Options for One, Two or Four Treatments",
   },
 ];

@@ -17,6 +17,7 @@
 }
 
   .card_backGround{
+    position: relative;
 background-color: #088ed1ad;  }
  .cardimg:hover{
    opacity: 0.3;
@@ -74,7 +75,7 @@ background-color: #088ed1ad;  }
 
 .like_modal{
   border-radius: 5% !important;
-  padding-block: 50%;
+  padding-block: 20%;
 }
 
 
