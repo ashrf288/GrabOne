@@ -47,6 +47,9 @@
     margin-bottom: 4px !important;
     font-size: 15px;
     font-weight: 100;
+    overflow:hidden !important;
+    white-space:nowrap !important;
+    text-overflow: ellipsis !important;
 
 }
 .cardDataOdd{
@@ -54,6 +57,9 @@
     color: rgb(169, 169, 169);
     font-size: 12px;
     font-weight: 100;
+    overflow:hidden !important;
+    white-space:nowrap !important;
+    text-overflow: ellipsis !important;
 
 }
 

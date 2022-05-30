@@ -3,8 +3,8 @@ import { Card, Button, Col, Row, Container } from "react-bootstrap";
 
 export default function CollectionDeals() {
   return (
-    <Container fluid>
-      <Row className="row deals">
+    <Container fluid className="card-container">
+      <Row style={{ maxWidth: "100%" }}>
         {data.map((ele) => {
           return (
             <Col
@@ -13,31 +13,24 @@ export default function CollectionDeals() {
               md={6}
               s={12}
               key={ele.id}
-              className="col-md-offset-3"
+              className="col-md-offset-"
             >
               <Card
                 style={{
                   minWidth: "15rem",
                   marginBottom: "2%",
                   marginTop: "2%",
+                  textAlign: "center",
                 }}
                 className="col-sm-*"
               >
-                <div className="container" style={{ width: "100%" }}>
-                  <Card.Img
-                    variant="top"
-                    src={ele.img}
-                    style={{ display: "block",
-                    minWidth: "118%",
-                    marginLeft: "-1.55rem", }}
-                  />
-
-                  <div className="overlay">
-                    <Card.Text className="text">{ele.desc}</Card.Text>
+                <div className="card_backGround">
+                    <Card.Img className="cardimg" src={ele.img} />
+                    <p className="text2" >{ele.desc}</p>
+                   
                   </div>
-                </div>
-                <Card.Body style={{ marginLeft: "20%"}}>
-                  <Card.Title>{ele.name}</Card.Title>
+                <Card.Body >
+                  <Card.Title className="card_title ">{ele.name}</Card.Title>
                   <Card.Text style={{ color: "#01B2EE" }}>
                     {ele.location}
                   </Card.Text>

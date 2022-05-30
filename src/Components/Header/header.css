@@ -100,12 +100,10 @@ color: var(--text-color);
 
 .head-lines{
     display: flex;
-    justify-content:space-between;
-    gap:1rem ;
-    margin-inline:2% ;
+    gap:0.9rem ;
     color: gray;
     font-size: large;
-    font-weight: 600;
+    font-weight: 500;
     width:max-content
 }
 .categorie:hover{

@@ -7,6 +7,8 @@ import { Row, Col, Container } from "react-bootstrap";
 import AucklandDeals from "../DealsComponents/AucklandDeals";
 import CollectionDeals from "../DealsComponents/CollectionDeals";
 import EscapesDeals from "../DealsComponents/EscapesDeals";
+import StoreDeals from "../DealsComponents/StoreDeals";
+import ResturantDeals from "../DealsComponents/ResturantDeals";
 import Heading from "./Heading";
 import ActivityDeals from "../DealsComponents/ActivityDeals";
 
@@ -48,6 +50,10 @@ export default function Body({ width }) {
         <EscapesDeals />
         <Heading name="Activities, Events & Outdoors" />
         <ActivityDeals />
+        <Heading name="Store " />
+        <StoreDeals/>
+        <Heading name="Restaurants, Bars, Cafes " />
+        <ResturantDeals/>
       </div>
     </div>
   );
@@ -61,6 +67,7 @@ let data = [
     location: "Honda Stores Auckland",
     old: "$270",
     new: "$190",
+    bought:300,
     desc: "Honda BasicCare 35-Point Service incl. Oil & Filter Change for Honda Vehicles 2014 & Older - Four Auckland Locations Available",
   },
   {
@@ -70,6 +77,7 @@ let data = [
     old: "$279",
     new: "$199",
     img: "//main-cdn.grabone.co.nz/goimage/495x343/66881e3937f955ca34d7304de9c7301d3ac7bb03.jpg",
+    bought:212,
     desc: "Luxury Five-Star Auckland Stay for Two in a Deluxe Room at Cordis Auckland incl. Cooked Breakfast, $50 Credit, 2 Drinks, Pool, Spa &amp; Fitness Centre, Parking &amp; Late Checkout - Options to Stay in the",
   },
 ];

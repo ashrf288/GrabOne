@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Card, Row, Col, Container } from "react-bootstrap";
+import { Card, Button, Row, Col, Container } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import LikeModal from "../DetailCard/LikeModal";
-export default function ActivityDeals() {
+export default function ResturantDeals() {
   const [isShow, setIsShow] = useState(false);
   return (
     <Container fluid className="card-container">
@@ -34,6 +34,14 @@ export default function ActivityDeals() {
                     width="30"
                     onClick={() => setIsShow(true)}
                   />
+                  <p style={{
+                      width:"50%",
+                      position:"absolute",
+                      top:"90%",color:"white",
+                      backgroundColor:"#01B2EE",
+                      textAlign:"center",
+                      
+                  }}> free delivery</p>
                 </div>
                 <Card.Body style={{ padding: "3%" }}>
                   <Card.Title className="card_title">{ele.name}</Card.Title>
@@ -92,42 +100,43 @@ export default function ActivityDeals() {
 
 let data = [
   {
-    id: "00012",
-    name: "Pen Fishing Rod Reel J1460-6",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/9b9e52a07c0d6e6701b240ec047c7c70490d0594.jpg",
-    location: "Pen Fishing Rod Reel",
-    old: null,
-    new: "$54",
-    desc: "Pen Fishing Rod Reel J1460-6",
-    bought:20
+    id: "003w301",
+    name: "$40 Breakfast or Lunch Voucher for Two People",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/ed9c8819fecc112a9655aaf8c48561c94e4a7a58.jpg",
+    location: "Remuera Local & Laneway",
+    old: "$40",
+    new: "$20",
+    bought:45,
+    desc: "$40 Breakfast or Lunch Voucher for Two People - Option for $60 Dinner Voucher",
   },
   {
-    id: "00022",
-    name: "Outdoor Pop-Up Tent ",
-    location: "Outdoor Pop-Up Tent ",
+    id: "233321312",
+    name: "Five-Course European Dining Experience for One Person",
+    location: "Monsieur Madame",
     old: null,
-    new: "$169",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/8772142ba94cb36bbbbc03b32c2b62ed4dda5e8e.jpg",
-    desc: "Outdoor Pop-Up Tent - Two Colours Available",
-    bought:20
+    new: "$69",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/5147d794573f908e161e61e5b2408c9d33522522.jpg",
+    bought:45,
+    desc: "Five-Course European Dining Experience for One Person - Options for up to Eight People",
   },
-  {
-    id: "00033",
-    name: "Keychain Flashlight Tool ",
-    location: "Westie Bistro",
-    old: null,
-    new: "$29",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/c8b2580cd5d583a41b501e9574dbf054f53f8aa8.jpg",
-    desc: "Keychain Flashlight Tool ",
-    bought:20
+ {
+    id: "53555",
+    name: "One-Night 5-Star Luxury Dunedin Getaway for Two incl. $50 F&B Credit",
+    location: "Fable Dunedin",
+    old: "$521",
+    new: "$289",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/03335a4e8cf15b4b10d7a36f03238152c1adbf0f.jpg",
+    bought:11,
+    desc: "One-Night 5-Star Luxury Dunedin Getaway for Two incl. $50 F&B Credit, Bubbles on Arrival, Cooked Breakfast, Valet Parking & Late Checkout - Option for Two & Three Nights with up to $100 Credit",
   },
-  {
-    id: "00044",
-    name: "Cargo Luggage Net",
-    location: "Fable Terrace Down M Gallery",
-    old: "$25",
-    new: "$19.5",
-    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/f67042bf7a1106e71559f910931124b0dc1ab810.jpg",
-    desc: "Cargo Luggage Net",
+  { 
+    id: "5646422",
+    name: "Laser LipoSlim Fat Reduction Treatment on Two Areas incl",
+    location: "Life Clinic Health & Beauty",
+    old:"$355",
+    new: "$89",
+    img: "https://main-cdn.grabone.co.nz/goimage/fullsize/299fabae4e142e2c9fee7bb895636ed458be4762.jpg",
+    bought:32,
+    desc: "Laser LipoSlim Fat Reduction Treatment on Two Areas incl. Consultation & a Return Voucher - Options for One, Two or Four Treatments",
   },
 ];

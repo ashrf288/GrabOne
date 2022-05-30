@@ -1,62 +1,64 @@
-
-
-.new-price{
-    color:rgb(1,178,238) !important;
-    font-size: xx-large !important;
-    font-weight: 600;
-    margin-left: 70% ;
+.card-container{
+  cursor: pointer;
 }
+
 .new-price2{
   color:rgb(1,178,238) !important;
   font-size: xx-large !important;
   font-weight: 600;
-  margin-left:55% ;
-}
-
-.new-price3{
-  color:rgb(1,178,238) !important;
-  font-size: xx-large !important;
-  font-weight: 600;
-  margin-left:65% ;
-}
-.container {
-    position: relative !important;
-    /* margin-left: -1.5rem !important; */
 }
 
 
+.card_title{
+  overflow:hidden !important;
+  white-space:nowrap !important;
+  text-overflow: ellipsis !important;
+  -webkit-line-clamp: 2;
+}
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    min-width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #088ed1ad;
-    /* margin-left: 1.5rem !important; */
-  }
-
-  .container:hover .overlay {
-    opacity: 1;
+  .card_backGround{
+    position: relative;
+background-color: #088ed1ad;  }
+ .cardimg:hover{
+   opacity: 0.3;
   }
   
+
   .text {
+    opacity: 0;
     color: white;
-    font-size: 15px;
-    width:100%;
     font-weight: 600;
+    text-align: center !important;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    
-    
+    font-size: large !important;
+    top: 20%;
+    line-height: 1.5em;
+    height: 3em;       /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
+    pointer-events: none;
+    margin: 1% !important;
+  }
+  .text2 {
+
+    /* if desc is few word onyl*/
+    opacity: 0;
+    color: white;
+    font-weight: 600;
+    text-align: center !important;
+    margin: 0 auto !important;
+    position: absolute;
+    font-size: large !important;
+    top: 20%; 
+    padding-inline:20%;     /* height is 2x line-height, so two lines will display */
+    pointer-events: none;
+
+  }
+
+  .cardimg:hover + .text{
+  opacity: 1 !important;
+  }
+  .cardimg:hover + .text2{
+  opacity: 1 !important;
   }
 
   .loveIcon{
@@ -72,6 +74,8 @@
 
 
 .like_modal{
-  width:80% !important;
-  border-radius: 50% !important;
+  border-radius: 5% !important;
+  padding-block: 20%;
 }
+
+

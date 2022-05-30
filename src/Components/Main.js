@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 import MobileHeader from "./Header/MobileHeader";
 import CategoriesHeader from "./Header/CategoriesHeader";
 import Footer from "./Footer/Footer";
-import NestedDrop from "../NestedDrop/NestedDrop";
+import NestedDrop from "./NestedDrop/NestedDrop";
 import Body from "./Body/Body";
 
 export default function Main() {
