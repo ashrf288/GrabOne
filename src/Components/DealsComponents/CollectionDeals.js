@@ -4,7 +4,7 @@ import { Card, Button, Col, Row, Container } from "react-bootstrap";
 export default function CollectionDeals() {
   return (
     <Container fluid className="card-container">
-      <Row className="row deals">
+      <Row style={{ maxWidth: "100%" }}>
         {data.map((ele) => {
           return (
             <Col
@@ -13,7 +13,7 @@ export default function CollectionDeals() {
               md={6}
               s={12}
               key={ele.id}
-              className="col-md-offset-3"
+              className="col-md-offset-"
             >
               <Card
                 style={{
